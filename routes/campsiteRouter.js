@@ -73,9 +73,6 @@ campsiteRouter.route('/:campsiteId')
             })
             .catch(err => next(err));
     })
-    .delete((req, res) => {
-        res.end(`Deleting campsite: ${req.params.campsiteId}`);
-    });
 
 campsiteRouter.route('/:campsiteId/comments')
     .get((req, res, next) => {
